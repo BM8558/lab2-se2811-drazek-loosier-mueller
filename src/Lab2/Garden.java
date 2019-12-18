@@ -8,6 +8,9 @@
 package Lab2;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Garden extends Application {
@@ -17,7 +20,10 @@ public class Garden extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
-
+    public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("garden.fxml"));
+        primaryStage.setTitle("adjusted value of bees");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
     }
 }

@@ -15,7 +15,5 @@ package Lab2;
  * @version created on 12/17/2019 at 7:34 PM
  */
 public class GardenController {
-    public static void main(String[] args) {
-        //dummy code
-    }
+
 }
