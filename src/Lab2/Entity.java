@@ -3,7 +3,7 @@ package Lab2;
  * CS1021-081
  * Winter 2018-2019
  * File header contains class Lab2.Entity
- * Name: drazek-loosierc
+ * Name: muellerbs
  * Created 12/17/2019
  */
 

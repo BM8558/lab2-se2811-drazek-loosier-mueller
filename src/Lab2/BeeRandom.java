@@ -2,7 +2,7 @@
  * CS1021-081
  * Winter 2018-2019
  * File header contains class BeeRandom
- * Name: drazek-loosierc
+ * Name: muellerbs
  * Created 12/17/2019
  */
 package Lab2;
