@@ -25,9 +25,11 @@ public class GardenController {
     private ImageView beeImage;
 
     @FXML
-    private Pane mainPane;
+    private Pane gardenPane;
 
     public void initialize() {
-        //TODO
+        gardenPane.setStyle("-fx-background-color: linear-gradient(to bottom right," +
+                " derive(forestgreen, 20%), derive(forestgreen, -40%));");
+
     }
 }

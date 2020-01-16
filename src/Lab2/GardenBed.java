@@ -15,7 +15,6 @@ package Lab2;
  * @version created on 12/17/2019 at 7:29 PM
  */
 public class GardenBed {
-    public static void main(String[] args) {
-        //dummy code
-    }
+
+
 }

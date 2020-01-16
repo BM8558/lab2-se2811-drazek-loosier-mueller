@@ -6,7 +6,7 @@
 
 
 <?import javafx.scene.layout.Pane?>
-<Pane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lab2.GardenController" fx:id="mainPane">
+<Pane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lab2.GardenController" fx:id="gardenPane">
    <children>
       <ImageView fx:id="beeView" fitHeight="150.0" fitWidth="200.0" layoutX="350.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" visible="true">
          <image>
