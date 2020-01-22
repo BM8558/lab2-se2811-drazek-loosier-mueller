@@ -7,6 +7,8 @@
  */
 package Lab2;
 
+import javafx.scene.image.ImageView;
+
 /**
  * CS1021-081 Winter 2018-2019
  * Class purpose: directed bee
@@ -31,10 +33,16 @@ public class BeeDirected extends Bee {
      * @param xPos the xpos for the bee
      * @param yPos the ypos for the bee
      * @param energy the energy of the bee
+     * @param imageView the imageView for the bee
      */
-    public BeeDirected(int xPos, int yPos, int energy){
-        super(xPos, yPos, energy);
+    public BeeDirected(int xPos, int yPos, int energy, ImageView imageView){
+        super(xPos, yPos, energy, imageView);
     }
+
+    public ImageView getImageView() {
+        return imageView;
+    }
+
 
     /**
      * moves the bee a fixed distance in a set direction

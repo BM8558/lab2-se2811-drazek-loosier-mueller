@@ -7,6 +7,8 @@
  */
 package Lab2;
 
+import javafx.scene.image.ImageView;
+
 import java.util.List;
 
 /**
@@ -34,9 +36,14 @@ public class BeeRandom extends Bee {
      * @param xPos the xpos for the bee
      * @param yPos the ypos for the bee
      * @param energy the energy of the bee
+     * @param imageView the imageView of the bee
      */
-    public BeeRandom(int xPos, int yPos, int energy){
-        super(xPos, yPos, energy);
+    public BeeRandom(int xPos, int yPos, int energy, ImageView imageView){
+        super(xPos, yPos, energy, imageView);
+    }
+
+    public ImageView getImageView() {
+        return imageView;
     }
 
     /**

@@ -7,6 +7,8 @@ package Lab2;
  * Created 12/17/2019
  */
 
+import javafx.scene.image.ImageView;
+
 /**
  * CS1021-081 Winter 2018-2019
  * Class purpose: Class
@@ -16,15 +18,29 @@ package Lab2;
  */
 public abstract class Entity {
     int xPos, yPos, energy;
+    ImageView imageView;
 
     public static void main(String[] args) {
         //dummy code
     }
 
-    public Entity(int xPos, int yPos, int energy){
+    /**
+     * General constructor for entity objects with shared attributes
+     * @param xPos the xpos of the entity
+     * @param yPos the ypos of the entity
+     * @param energy the energy of the entity
+     * @param imageView the imageview for the entity
+     */
+    public Entity(int xPos, int yPos, int energy, ImageView imageView){
         this.xPos = xPos;
         this.yPos = yPos;
         this.energy = energy;
+        this.imageView = imageView;
+    }
+
+
+    public ImageView getImageView() {
+        return imageView;
     }
 
     public void setxPos(int xPos) {

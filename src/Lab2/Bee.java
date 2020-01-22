@@ -7,6 +7,8 @@
  */
 package Lab2;
 
+import javafx.scene.image.ImageView;
+
 /**
  * CS1021-081 Winter 2018-2019
  * Class purpose: bee
@@ -23,9 +25,10 @@ public abstract class Bee extends Entity {
      * @param xPos the xpos for the bee
      * @param yPos the ypos for the bee
      * @param energy the energy of the bee
+     * @param imageView the imageView for the bee
      */
-    public Bee(int xPos, int yPos, int energy){
-        super(xPos, yPos, energy);
+    public Bee(int xPos, int yPos, int energy, ImageView imageView){
+        super(xPos, yPos, energy, imageView);
     }
 
     /**
@@ -36,7 +39,9 @@ public abstract class Bee extends Entity {
     }
 
 
-
+    public ImageView getImageView() {
+        return imageView;
+    }
 
     public static void main(String[] args) {
         //dummy code
