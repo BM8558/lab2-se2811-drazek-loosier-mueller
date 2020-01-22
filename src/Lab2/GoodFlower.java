@@ -29,9 +29,4 @@ public class GoodFlower extends Flower {
         super(xPos, yPos, energy, imageView);
         nectar = 0;
     }
-
-    @Override
-    public ImageView getImageView() {
-        return imageView;
-    }
 }

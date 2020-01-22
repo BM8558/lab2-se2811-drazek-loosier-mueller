@@ -28,13 +28,8 @@ public abstract class Flower extends Entity {
      * @param energy the energy of the bee
      * @param imageView the image that represents the flower
      */
-    public Flower(int xPos, int yPos, int energy, ImageView imageView){
+    public Flower(int xPos, int yPos, int energy, ImageView imageView) {
         super(xPos, yPos, energy, imageView);
         nectar = 0;
-    }
-
-    @Override
-    public ImageView getImageView() {
-        return imageView;
     }
 }

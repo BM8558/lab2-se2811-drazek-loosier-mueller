@@ -8,9 +8,24 @@
 <?import javafx.scene.layout.Pane?>
 <Pane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lab2.GardenController" fx:id="gardenPane">
    <children>
-      <ImageView fx:id="beeView" fitHeight="150.0" fitWidth="200.0" layoutX="350.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <ImageView fx:id="dirBeeView" fitHeight="150.0" fitWidth="200.0" layoutX="350.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image  url ="@../bee-1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ranBeeView" fitHeight="150.0" fitWidth="200.0" layoutX="350.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image  url ="@../bee-2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="goodFlowerView" fitHeight="150.0" fitWidth="200.0" layoutX="350.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image  url ="@../daisy.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="badFlowerView" fitHeight="150.0" fitWidth="200.0" layoutX="350.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image  url ="@../nightshade.jpg" />
          </image>
       </ImageView>
    </children>
