@@ -15,7 +15,18 @@ package Lab2;
  * @version created on 12/17/2019 at 7:27 PM
  */
 public abstract class Flower extends Entity {
-    public static void main(String[] args) {
-        //dummy code
+    int xPos, yPos, energy;
+    double nectar;
+
+    /**
+     * constructor for the Flower
+     * @param xPos the xpos for the bee
+     * @param yPos the ypos for the bee
+     * @param energy the energy of the bee
+     */
+    public Flower(int xPos, int yPos, int energy){
+        super(xPos, yPos, energy);
+        nectar = 0;
     }
+
 }

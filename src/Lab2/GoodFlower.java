@@ -15,7 +15,14 @@ package Lab2;
  * @version created on 12/17/2019 at 7:28 PM
  */
 public class GoodFlower extends Flower {
-    public static void main(String[] args) {
-        //dummy code
+    /**
+     * constructor for the Good Flower
+     * @param xPos the xpos for the bee
+     * @param yPos the ypos for the bee
+     * @param energy the energy of the bee
+     */
+    public GoodFlower(int xPos, int yPos, int energy){
+        super(xPos, yPos, energy);
+        nectar = 10;
     }
 }
