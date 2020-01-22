@@ -43,9 +43,11 @@ public class BeeRandom extends Bee {
         super(xPos, yPos, energy, imageView);
     }
 
+    /*
     public ImageView getImageView() {
         return imageView;
     }
+    */
 
     /**
      * chooses a target from a list of flowers

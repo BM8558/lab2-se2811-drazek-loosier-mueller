@@ -40,9 +40,11 @@ public class BeeDirected extends Bee {
         super(xPos, yPos, energy, imageView);
     }
 
+    /*
     public ImageView getImageView() {
         return imageView;
     }
+    */
 
 
     /**

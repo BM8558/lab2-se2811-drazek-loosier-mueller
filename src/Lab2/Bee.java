@@ -40,10 +40,11 @@ public abstract class Bee extends Entity {
     }
 
 
+    /*
     public ImageView getImageView() {
         return imageView;
     }
-
+    */
     public static void main(String[] args) {
         //dummy code
     }
