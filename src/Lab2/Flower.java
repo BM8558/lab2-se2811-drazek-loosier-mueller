@@ -41,5 +41,6 @@ public abstract class Flower extends Entity {
             isRipe = false;
             return nectar;
         }
+        return 0;
     }
 }
