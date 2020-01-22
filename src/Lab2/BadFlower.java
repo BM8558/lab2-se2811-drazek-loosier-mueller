@@ -17,6 +17,11 @@ import javafx.scene.image.ImageView;
  * @version created on 12/17/2019 at 7:29 PM
  */
 public class BadFlower extends Flower {
+    int xPos, yPos, energy;
+    double nectar;
+    ImageView imageView;
+
+
     /**
      * constructor for the Flower
      * @param xPos the xpos for the bee
@@ -27,5 +32,10 @@ public class BadFlower extends Flower {
     public BadFlower(int xPos, int yPos, int energy, ImageView imageView){
         super(xPos, yPos, energy, imageView);
         nectar = 0;
+    }
+
+    @Override
+    public ImageView getImageView() {
+        return imageView;
     }
 }

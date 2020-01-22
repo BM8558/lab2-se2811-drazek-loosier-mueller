@@ -33,4 +33,8 @@ public abstract class Flower extends Entity {
         nectar = 0;
     }
 
+    @Override
+    public ImageView getImageView() {
+        return imageView;
+    }
 }
