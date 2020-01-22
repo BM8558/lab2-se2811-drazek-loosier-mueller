@@ -19,6 +19,7 @@ import javafx.scene.image.ImageView;
 public abstract class Bee extends Entity {
     int xPos, yPos, energy;
     static final double MOVE_DISTANCE = 10.0;
+    ImageView imageView;
 
     /**
      * constructor for the random selecting bee
