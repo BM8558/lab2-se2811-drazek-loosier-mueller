@@ -39,15 +39,21 @@ public abstract class Bee extends Entity {
         //moves the bee a fixed amount based on its particular strategy
     }
 
-
-    /*
-    public ImageView getImageView() {
-        return imageView;
-    }
-    */
-    public static void main(String[] args) {
-        //dummy code
+    @Override
+    public int colWith(int energy) {
+        this.energy += energy;
+        return -1;
     }
 
+    public void collide(Entity obj) {
+        if (dist(obj) < 50 ){
+            energy += obj.colWith(-1);
+        }
+    }
 
+    private double dist(Entity obj) {
+        double xd = Math.abs(xPos - obj.getxPos());
+        double yd = Math.abs(yPos - obj.getyPos());
+        return (Math.sqrt((xd * xd) + (yd * yd)));
+    }
 }

@@ -19,7 +19,8 @@ import javafx.scene.image.ImageView;
 public abstract class Flower extends Entity {
     int xPos, yPos, energy;
     ImageView imageView;
-    double nectar;
+    int nectar;
+    boolean isRipe;
 
     /**
      * constructor for the Flower
@@ -31,5 +32,14 @@ public abstract class Flower extends Entity {
     public Flower(int xPos, int yPos, int energy, ImageView imageView) {
         super(xPos, yPos, energy, imageView);
         nectar = 0;
+        isRipe = true;
+    }
+
+    @Override
+    public int colWith(int energy) {
+        if(isRipe) {
+            isRipe = false;
+            return nectar;
+        }
     }
 }

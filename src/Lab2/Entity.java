@@ -66,4 +66,6 @@ public abstract class Entity {
     public int getyPos() {
         return yPos;
     }
+
+    public abstract int colWith(int energy);
 }
