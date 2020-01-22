@@ -49,5 +49,6 @@ public class BeeDirected extends Bee {
      */
     @Override
     public void move(){
+
     }
 }
