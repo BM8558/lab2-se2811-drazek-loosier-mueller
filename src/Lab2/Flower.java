@@ -7,6 +7,8 @@
  */
 package Lab2;
 
+import javafx.scene.image.ImageView;
+
 /**
  * CS1021-081 Winter 2018-2019
  * Class purpose: flower
@@ -16,6 +18,7 @@ package Lab2;
  */
 public abstract class Flower extends Entity {
     int xPos, yPos, energy;
+    ImageView imageView;
     double nectar;
 
     /**
@@ -23,9 +26,10 @@ public abstract class Flower extends Entity {
      * @param xPos the xpos for the bee
      * @param yPos the ypos for the bee
      * @param energy the energy of the bee
+     * @param imageView the image that represents the flower
      */
-    public Flower(int xPos, int yPos, int energy){
-        super(xPos, yPos, energy);
+    public Flower(int xPos, int yPos, int energy, ImageView imageView){
+        super(xPos, yPos, energy, imageView);
         nectar = 0;
     }
 

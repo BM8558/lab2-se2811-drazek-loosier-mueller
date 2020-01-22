@@ -38,13 +38,13 @@ public class GardenController {
         gardenPane.setStyle("-fx-background-color: linear-gradient(to bottom right," +
                 " derive(forestgreen, 20%), derive(forestgreen, -40%));");
 
-        beeList.add(new BeeDirected(100, 100, 50));
-        beeList.add(new BeeRandom(600, 800, 50));
+        beeList.add(new BeeDirected(100, 100, 50, new ImageView(beeImage.getImage())));
+        beeList.add(new BeeRandom(600, 800, 50, new ImageView(beeImage.getImage())));
         entityList.addAll(beeList);
-        flowerList.add(new GoodFlower(450, 100, 50));
-        flowerList.add(new GoodFlower(450, 600, 50));
-        flowerList.add(new BadFlower(100, 350, 50));
-        flowerList.add(new BadFlower(800, 350, 50));
+        flowerList.add(new GoodFlower(450, 100, 50, new ImageView(beeImage.getImage())));
+        flowerList.add(new GoodFlower(450, 600, 50, new ImageView(beeImage.getImage())));
+        flowerList.add(new BadFlower(100, 350, 50, new ImageView(beeImage.getImage())));
+        flowerList.add(new BadFlower(800, 350, 50, new ImageView(beeImage.getImage())));
         entityList.addAll(flowerList);
         for (Entity obj: entityList) {
             gardenPane.getChildren().add(obj.getImageView());

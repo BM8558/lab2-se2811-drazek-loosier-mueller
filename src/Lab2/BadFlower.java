@@ -7,6 +7,8 @@
  */
 package Lab2;
 
+import javafx.scene.image.ImageView;
+
 /**
  * CS1021-081 Winter 2018-2019
  * Class purpose: mean flower, bad
@@ -16,13 +18,14 @@ package Lab2;
  */
 public class BadFlower extends Flower {
     /**
-     * constructor for the Good Flower
+     * constructor for the Flower
      * @param xPos the xpos for the bee
      * @param yPos the ypos for the bee
      * @param energy the energy of the bee
+     * @param imageView the image that represents the flower
      */
-    public BadFlower(int xPos, int yPos, int energy){
-        super(xPos, yPos, energy);
-        nectar = -10;
+    public BadFlower(int xPos, int yPos, int energy, ImageView imageView){
+        super(xPos, yPos, energy, imageView);
+        nectar = 0;
     }
 }
