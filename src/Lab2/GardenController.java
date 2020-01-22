@@ -76,7 +76,9 @@ public class GardenController {
 
     @FXML
     public void onKeyPressed(KeyEvent keyEvent) {
-        tick();
+        if (keyEvent.getCode() == KeyCode.RIGHT) {
+            tick();
+        }
     }
 
     private void tick() {
