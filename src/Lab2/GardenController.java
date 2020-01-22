@@ -88,15 +88,15 @@ public class GardenController {
     private void moveAll() {
         for (Bee bee: beeList) {
             int x = 1;
-            //bee.move(flowerList);
+            bee.move(flowerList);
         }
     }
 
     private void checkCollision() {
-        for (int i = 0; i < entityList.size(); i++) {
+        for (int i = 0; i < beeList.size(); i++) {
             for (int j = i + 1; j < entityList.size(); j++) {
                 int s = i + j;
-                //entityList.get(i).collide(entityList.get(j));
+                beeList.get(i).collide(entityList.get(j));
             }
         }
     }
@@ -105,6 +105,9 @@ public class GardenController {
         for (Entity obj: entityList) {
             obj.getImageView().setX(obj.getxPos());
             obj.getImageView().setY(obj.getyPos());
+            if (obj.energy <= 0) {
+                obj.getImageView().setOpacity(50.0);
+            }
         }
     }
 }

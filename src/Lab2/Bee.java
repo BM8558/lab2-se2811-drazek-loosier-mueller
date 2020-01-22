@@ -9,6 +9,9 @@ package Lab2;
 
 import javafx.scene.image.ImageView;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 /**
  * CS1021-081 Winter 2018-2019
  * Class purpose: bee
@@ -35,7 +38,7 @@ public abstract class Bee extends Entity {
     /**
      * moves the bee a fixed distance in the bee's set pattern
      */
-    public void move(){
+    public void move(ArrayList<Flower> flowerList){
         //moves the bee a fixed amount based on its particular strategy
     }
 
@@ -46,7 +49,7 @@ public abstract class Bee extends Entity {
     }
 
     public void collide(Entity obj) {
-        if (dist(obj) < 50 ){
+        if (dist(obj) < 10 ){
             energy += obj.colWith(-1);
         }
     }
